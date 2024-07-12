@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <title>Listado de tareas</title>
+</head>
+<body>
+  <header class="py-3">
+    <h1>Listado de tareas</h1>
+    <h5>Trabajo Integrador - PDI</h5>
+    <hr>
+    <br><br><br><br>
+  </header>
+  <main class="container">
+    <nav class="menu">
+      <ul>
+          <li class="linea"><a href="#">Inicio</a></li>
+          <li class="linea"><a href="#">Catálogo</a></li>
+          <li class="linea"><a href="#">Quiénes somos</a></li>
+          <li class="linea"><a href="#">Preguntas frecuentes</a></li>
+          <li class="linea"><a href="#">Contacto</a></li>
+      </ul>
+  </nav>
+    <section class="formulario">
+      <form action="http://localhost:3000/" method="post" id="formulario"> 
+        <input type="text" placeholder="Nombre" name="name" id="first" class="input1"> <br> <br> 
+        <input type="text" placeholder="Descripcion" name="description" id="second" class="input2"> <br><br>
+        <input type="submit" value="Enviar" class="btn" id="botoncito">
+      </form>
+      <ul id="lista-tareas">
+        <!--Acá se muestran las tareas-->
+      </ul>
+    </section>
+    <footer id="footer">
+      <hr>
+      <p class="data">&copy; 2024 Trabajo Practico. Todos los derechos reservados.</p>
+      <p class="data1">Terms of Service   •   Privacy Policy</p>
+  </footer>
+  </main>
+
+  <script src="scripts/tareas.js"></script>
+</body>
+</html>

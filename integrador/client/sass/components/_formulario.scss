@@ -1,0 +1,33 @@
+$color-central:rgba(196, 149, 196);
+$color-input:rgb(224, 118, 57);
+
+@mixin mq-desktop{
+  @media screen and (min-width:1200px){
+    @content;
+  }
+}
+form{
+  margin:auto;
+}
+.formulario{
+  margin:auto;
+  display: flex;
+  flex-direction: row;
+  width: 600px;
+  height: 360px;
+  background-color: $color-central;
+  
+  &__input{
+    margin: auto;
+    width: 90%;
+    background-color: $color-input;
+
+      // @include mq-desktop(){
+    //   width: 50%;
+    //   background-color: aqua;
+    // }
+  }
+  &__btn{
+    background-color: aqua;
+  }
+}
