@@ -5,7 +5,7 @@
  */
 const obtener_tareas = async () => {
   const respuesta = await fetch('http://localhost:3000/', {
-    method: 'post'
+    method: 'get'
   })
   const tareas = await respuesta.json()
 
